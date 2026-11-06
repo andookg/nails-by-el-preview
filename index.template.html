@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__ · preview</title><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#faf4f6;--ink:#2a1f24;--mute:#7a6670;--line:#e8d6dd;--acc:#C45C7A;--card:#fffafb}
+*{box-sizing:border-box;margin:0}body{background:var(--paper);color:var(--ink);font:16px/1.6 Geist,system-ui,sans-serif}
+.serif{font-family:"Instrument Serif",serif;font-weight:400}
+.lbl{font:11px/1 "Geist Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bar{position:sticky;top:0;z-index:5;background:var(--ink);color:#faf4f6;text-align:center;font:12px "Geist Mono",monospace;padding:7px 10px;letter-spacing:.05em}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+nav .serif{font-size:24px}nav a.b{font-size:14px}
+a{color:inherit}.b{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:500;border:0;font:500 15px Geist,sans-serif;cursor:pointer;transition:transform .08s,box-shadow .08s;box-shadow:0 3px 0 var(--acc)}
+.b:active{transform:translateY(3px);box-shadow:0 0 0 var(--acc)}
+.hero{padding:64px 0 40px;display:grid;gap:36px}
+.hero h1{font-size:clamp(48px,11vw,104px);line-height:.95}
+.hero h1 em{font-style:italic;color:var(--acc)}
+.u{background:no-repeat 0 100%/100% 8px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 8' preserveAspectRatio='none'%3E%3Cpath d='M2 5 Q50 1 100 4 T198 3' stroke='%235f6f5a' stroke-width='2' fill='none'/%3E%3C/svg%3E");padding-bottom:6px}
+.hero p{max-width:34em;color:var(--mute);font-size:18px}
+.stage{background:repeating-linear-gradient(135deg,#f3e4ea 0 1px,transparent 1px 9px),var(--paper);border:1px solid var(--line);border-radius:12px;padding:56px 22px;display:flex;justify-content:center}
+/* object: appointment card */
+.appt{width:min(380px,100%);background:var(--card);border-radius:36px;padding:30px 28px;box-shadow:0 18px 30px -18px rgba(80,30,50,.4),0 1px 0 #fff inset;position:relative;border:1px solid #edd0db}
+.appt:before,.appt:after{content:"";position:absolute;top:58%;width:22px;height:22px;border-radius:50%;background:#f3e4ea;border:1px solid #edd0db}
+.appt:before{left:-12px}.appt:after{right:-12px}
+.appt hr{border:0;border-top:1.5px dashed var(--line);margin:18px -4px}
+.appt h3{font-size:34px;line-height:1}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(36px,7vw,58px);line-height:1;margin:10px 0 28px}
+.svc{list-style:none;padding:0}.svc li{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.svc b{font-family:"Instrument Serif",serif;font-weight:400;font-size:26px}.svc span{color:var(--mute);grid-column:1}.svc i{font:12px "Geist Mono",monospace;color:var(--acc);font-style:normal;grid-row:1;grid-column:2;align-self:center}
+.ph{background:#f5dce6;padding:0 4px;border-radius:4px}
+.tag{transform:rotate(-2deg);background:var(--card);border-radius:36px 36px 36px 36px;padding:34px;max-width:520px;margin:auto;box-shadow:0 18px 30px -18px rgba(80,30,50,.4);border:1px solid #edd0db;transition:transform .4s}
+.tag:hover{transform:rotate(0)}.tag .hole{width:16px;height:16px;border-radius:50%;border:1px solid var(--line);background:var(--paper);margin-bottom:18px}
+.tag h3{font-size:42px;line-height:1;margin:8px 0}
+.grid2{display:grid;gap:36px}
+.note{font-size:13px;color:var(--mute);border-left:2px solid var(--acc);padding-left:10px}
+table{border-collapse:collapse;width:100%}td{padding:9px 0;border-bottom:1px solid var(--line)}td:last-child{text-align:right;font-family:"Geist Mono",monospace;font-size:14px}
+footer{padding:36px 0 50px;border-top:1px solid var(--line);font-size:12px;color:var(--mute);text-align:center}
+@media(min-width:820px){.hero{grid-template-columns:1.2fr 1fr;align-items:center;padding:96px 0 72px}.grid2{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.tag{transform:none}}
+</style></head><body>
+<div class="bar">PREVIEW · a concept site, not yet live for bookings</div>
+<div class="wrap" id="app"></div>
+<script>window.BIZ=__DATA__;</script>
+<script>
+const B=window.BIZ,e=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),
+p=s=>e(s).replace(/\[([^\]]+)\]/g,'<span class="ph">[$1]</span>');
+document.documentElement.style.setProperty('--acc',B.accent||'#C45C7A');
+const today=new Date().toLocaleDateString('en-CA',{weekday:'short'}).slice(0,3);
+const bookHref=e(B.bookingUrl||B.instagram);
+const specialCta=e((B.special&&B.special.cta)||'Book now');
+document.getElementById('app').innerHTML=`
+<nav><span class="serif">${e(B.shortName)}</span><a class="b" href="${bookHref}" target="_blank" rel="noopener">Book now</a></nav>
+<header class="hero"><div><div class="lbl">${e(B.heroLabel||'Nail artist')} · ${e(B.city)}</div>
+<h1 class="serif" style="margin:16px 0 22px">${e(B.name)} <em>${e(B.heroEm||'nails')}</em><br><span class="u">${e(B.heroLine||'red deer')}</span></h1>
+<p>${p(B.intro)}</p><p style="margin-top:26px"><a class="b" href="${bookHref}" target="_blank" rel="noopener">Book now</a></p></div>
+<div class="stage"><div class="appt"><div class="lbl">Your next appointment</div><h3 class="serif" style="margin-top:10px">${e(B.tagline)}</h3>
+<p style="color:var(--mute);font-size:14px;margin-top:8px">${e(B.address)}</p><hr>
+<table>${B.hours.slice(1,6).map(h=>`<tr><td>${h[0]}</td><td>${p(h[1])}</td></tr>`).join('')}</table>
+<p style="color:var(--mute);font-size:12px;margin-top:12px">${p(B.hoursNote||'')}</p></div></div></header>
+<section id="services"><div class="lbl">Services</div><h2 class="serif">What she <em>offers</em></h2>
+<ul class="svc">${B.services.map(s=>`<li><b>${e(s.name)}</b><span>${p(s.desc)}</span><i>${p(s.price)}</i></li>`).join('')}</ul></section>
+<section style="background:transparent"><div class="tag"><div class="hole"></div><div class="lbl">${e(B.special.label)}</div>
+<h3 class="serif">${e(B.special.title)}</h3><p style="color:var(--mute)">${p(B.special.desc)}</p>
+<p style="margin-top:14px;font-family:'Geist Mono',monospace;font-size:13px">${p(B.special.price)} · ${p(B.special.dates)}</p>
+<p style="margin-top:20px"><a class="b" href="${bookHref}" target="_blank" rel="noopener">${specialCta}</a></p></div></section>
+<section id="about" class="grid2"><div><div class="lbl">About</div><h2 class="serif">${e(B.aboutHeading||'nails · red deer').split('·')[0].trim()} <span class="u">${e((B.aboutHeading||'nails · red deer').includes('·')?(B.aboutHeading.split('·')[1]||'').trim():'red deer')}</span></h2></div>
+<div><p>${p(B.about)}</p><p class="note" style="margin-top:20px">${p(B.reviewsNote)}</p></div></section>
+<section id="book" class="grid2"><div><div class="lbl">Book</div><h2 class="serif">Dm to <em>book</em></h2>
+<p class="note">Preview only. El books through her Ascend link — tap below to open booking.</p>
+<p style="margin-top:22px"><a class="b" href="${bookHref}" target="_blank" rel="noopener">Dm ${e(B.instagramHandle)}</a></p></div>
+<div>
+<p style="color:var(--mute);font-size:15px">Home-based in Red Deer · home service available. Strictly by appointment — Russian manicure on every set, Gel-X, BIAB, lashes & brows.</p>
+<p class="note" style="margin-top:18px">Phone and email: [to confirm] — for now, book via Instagram only.</p>
+</div></section>
+<section id="visit" class="grid2"><div><div class="lbl">Visit</div><h2 class="serif">Find her</h2>
+<p>${e(B.address)}</p>
+<p style="margin-top:10px;color:var(--mute)">Street address: [to confirm]</p>
+<p style="margin-top:18px"><a class="b" href="${e(B.mapsUrl)}" target="_blank" rel="noopener">Map search</a> &nbsp; <a href="${e(B.instagram)}" target="_blank" rel="noopener">Instagram ${e(B.instagramHandle)}</a></p></div>
+<table>${B.hours.map(h=>`<tr${h[0]==today?' style="color:var(--acc)"':''}><td>${h[0]}</td><td>${p(h[1])}</td></tr>`).join('')}</table></section>
+<footer>Free preview made for you by <a href="${e(B.maker.url)}">${e(B.maker.name)}</a>, shapedsi.ca</footer>`;
+</script></body></html>

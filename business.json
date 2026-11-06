@@ -1,0 +1,103 @@
+{
+  "slug": "nails-by-el",
+  "name": "Nails by El",
+  "shortName": "Nails by El",
+  "displayBrand": "Nails by El",
+  "tagline": "healthy nails, russian prep, gel-x & biab.",
+  "heroLabel": "Russian manicure \u00b7 Gel-X \u00b7 BIAB",
+  "heroEm": "nails",
+  "heroLine": "red deer",
+  "intro": "Home-based nail artist in Red Deer, Alberta \u2014 Russian manicure on every set, Gel-X, BIAB, plus lash perming and brow lamination. Established 2022. Strictly by appointment. Home service available.",
+  "city": "Red Deer, Alberta",
+  "address": "Red Deer, Alberta \u00b7 home-based / home service",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nails+by+El+Red+Deer+Alberta",
+  "phone": "",
+  "email": "",
+  "bookingUrl": "https://bookwithnailsbyel.as.me/",
+  "instagram": "https://www.instagram.com/nails_by_el__/",
+  "instagramHandle": "@nails_by_el__",
+  "hours": [
+    [
+      "Mon",
+      "[hours to confirm]"
+    ],
+    [
+      "Tue",
+      "[hours to confirm]"
+    ],
+    [
+      "Wed",
+      "[hours to confirm]"
+    ],
+    [
+      "Thu",
+      "[hours to confirm]"
+    ],
+    [
+      "Fri",
+      "[hours to confirm]"
+    ],
+    [
+      "Sat",
+      "[hours to confirm]"
+    ],
+    [
+      "Sun",
+      "[hours to confirm]"
+    ]
+  ],
+  "hoursNote": "Strictly by appointment \u2014 book at bookwithnailsbyel.as.me. Home-based and home service in Red Deer.",
+  "services": [
+    {
+      "name": "Russian manicure (included)",
+      "desc": "Already part of prepping every set \u2014 her standard technique for healthy, clean nails.",
+      "price": "[price]"
+    },
+    {
+      "name": "Gel-X full sets",
+      "desc": "Clean Gel-X sets \u2014 soft fresh looks, quartz, aura, and custom art.",
+      "price": "[price]"
+    },
+    {
+      "name": "BIAB",
+      "desc": "Builder-in-a-bottle overlays for strength and natural growth.",
+      "price": "[price]"
+    },
+    {
+      "name": "Custom nail art",
+      "desc": "Character and themed sets \u2014 including One Piece / Nico Robin-inspired looks.",
+      "price": "[price]"
+    },
+    {
+      "name": "Lash perming",
+      "desc": "Lash perm for a lifted, low-maintenance curl.",
+      "price": "[price]"
+    },
+    {
+      "name": "Brow lamination",
+      "desc": "Brow lamination to frame the whole look.",
+      "price": "[price]"
+    },
+    {
+      "name": "Pedicure",
+      "desc": "Pedicure appointments \u2014 see her PEDICURE highlight.",
+      "price": "[price]"
+    }
+  ],
+  "special": {
+    "label": "Holiday booking",
+    "title": "Pre-book your holiday nails",
+    "desc": "Her feed is already reminding clients to lock holiday sets now. Book through the link in bio \u2014 Ascend / bookwithnailsbyel.as.me.",
+    "price": "[special price, to confirm]",
+    "dates": "[offer dates, to confirm]",
+    "cta": "Book now"
+  },
+  "about": "El is a Red Deer nail artist (est. 2022) working from home and offering home service. Russian manicure is already her standard prep on every set \u2014 not an add-on for now \u2014 with Gel-X and BIAB, plus lash perming and brow lamination. Feed favourites include a Russian Manicure World certificate, healthy natural-nail progress, and that Nico Robin / One Piece Halloween set. Strictly by appointment.",
+  "aboutHeading": "nails \u00b7 red deer",
+  "reviewsNote": "[Client reviews: to be added with permission]",
+  "accent": "#C45C7A",
+  "maker": {
+    "name": "ShapedSI",
+    "url": "https://shapedsi.ca"
+  }
+}
